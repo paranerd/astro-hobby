@@ -1,0 +1,6 @@
+baseURL: 'https://astro-hobby.de/'
+languageCode: 'de-de'
+title: 'Astro Hobby'
+permalinks:
+  page:
+    galerie: /galerie/:year/:month/:day/:slug/

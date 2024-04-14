@@ -1,0 +1,37 @@
+{{ define "main" }}
+<!-- Masthead -->
+{{ partial "masthead" . }}
+
+<main class="centered">
+  <!-- Lightbox -->
+  {{ partial "lightbox" . }}
+
+  {{ if .Params.info }}
+    <table class="project-info">
+      {{ range $row := .Params.info }}
+      <tr>
+        <td>{{ $row.key }}</td>
+        <td>{{ $row.value }}</td>
+      </tr>
+      {{ end }}
+    </table>
+  {{ end }}
+
+
+  <div class="project-description">
+    {{ .Content }}
+  </div>
+
+  <div class="project-info">
+    <div>
+
+      <!-- Project Links -->
+      <div class="project-links">
+        {{ range $name, $link := .Params.links }}
+          <button class="btn"><a href="{{ $link }}" {{ if strings.HasPrefix $link "http" }} target="_blank"{{ end }}>{{ replace (upper $name) "_" " " }}</a></button>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</main>
+{{ end }}

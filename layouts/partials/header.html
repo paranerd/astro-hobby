@@ -1,0 +1,86 @@
+<header>
+  <div id="header-logo">
+    <a href="/">
+      <img src="/img/logo.png" width="180" height="46" alt="" />
+    </a>
+  </div>
+
+  <nav id="flyout">
+    <ul>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/galerie" }}active{{ end }}'
+          href="/galerie"
+          >Galerie</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/equipment" }}active{{ end }}'
+          href="/equipment"
+          >Equipment</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/kontakt" }}active{{ end }}'
+          href="/kontakt"
+          >Kontakt</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/allsky" }}active{{ end }}'
+          href="/allsky"
+          >Allsky</a
+        >
+      </li>
+    </ul>
+  </nav>
+
+  <div id="header-menu-flyout">
+    <ul>
+      <li>
+        <div id="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <nav id="header-menu-main">
+    <ul>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/galerie" }}active{{ end }}'
+          href="/galerie"
+          >Galerie</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/equipment" }}active{{ end }}'
+          href="/equipment"
+          >Equipment</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/kontakt" }}active{{ end }}'
+          href="/kontakt"
+          >Kontakt</a
+        >
+      </li>
+      <li>
+        <a
+          class='{{ if hasPrefix .Page.RelPermalink "/allsky" }}active{{ end }}'
+          href="/allsky"
+          >Allsky</a
+        >
+      </li>
+    </ul>
+  </nav>
+</header>
