@@ -4,3 +4,4 @@ title: 'Astro Hobby'
 permalinks:
   page:
     galerie: /galerie/:year/:month/:day/:slug/
+enableRobotsTXT: true
