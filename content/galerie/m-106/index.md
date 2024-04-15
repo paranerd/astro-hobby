@@ -1,7 +1,10 @@
 ---
-title: 'M 106 oder NGC 4258'
+title: 'M 106'
+title_full: 'M 106 (NGC 4258)'
 date: '2024-03-23'
 author: michael
+categories:
+  - galaxien
 info:
   - key: 'Sternbild'
     value: 'Canes Venatici (Jagdhunde)'
@@ -23,8 +26,8 @@ info:
     value: '250/1000 Lacerta Fotonewton'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
-categories:
-  - galaxien
 ---
+
+![M-106](header.jpg 'M-106')
 
 ![M-106 mit Annotationen](m-106-annotated.jpeg 'M-106 mit Annotationen')
