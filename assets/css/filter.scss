@@ -1,0 +1,39 @@
+.filter-results {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes filterFadeIn {
+  0% {
+    display: flex;
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.filterFadeIn {
+  animation: filterFadeIn .4s ease-out;
+  animation-fill-mode: both;
+}
+
+.filter-item {
+  &.inactive {
+    opacity: 0;
+    transform: scale(0);
+    display: none;
+  }
+}

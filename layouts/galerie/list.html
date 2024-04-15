@@ -5,29 +5,30 @@
 
 <main>
   <div class="content">
-    <ul class="gallery-categories">
-      <li class="category active" data-category="all">Alle</li>
+    <ul class="filters">
+      <li class="filter active" data-filter="all">Alle</li>
 
       {{ range $name, $taxonomy := .Site.Taxonomies }} {{ if eq "categories"
       $name }} {{ range $key, $value := $taxonomy }} {{ if ge (where
       $value.Pages "Section" "galerie") 1 }}
-      <li data-category="{{ .Page.Title | urlize }}" class="category">
+      <li data-filter="{{ .Page.Title | urlize }}" class="filter">
         {{ .Page.Title }}
       </li>
       {{ end }} {{ end }} {{ end }} {{ end }}
     </ul>
 
-    <div id="gallery">
+    <div id="gallery" class="filter-results">
       {{ range (where .Pages "Type" "galerie") }}
       <a
         href="{{ .Page.RelPermalink }}"
-        class="gallery-item"
-        data-categories="{{ range .Params.categories }}{{ . | urlize }},{{ end }}"
+        class="gallery-item filter-item"
+        data-filters="{{ range .Params.categories }}{{ . | urlize }},{{ end }}"
       >
         {{ with .Resources.GetMatch "header.*" }}
+        {{ $image := .Resize "x400" }}
         <div class="gallery-item-img">
           <img
-            src="data:{{ .MediaType.Type }};base64,{{ .Content | base64Encode }}"
+            src="data:{{ .MediaType.Type }};base64,{{ $image.Content | base64Encode }}"
           />
         </div>
         {{ end }}

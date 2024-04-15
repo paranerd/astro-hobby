@@ -1,9 +1,16 @@
-{{- with resources.Get "css/style.scss" }} {{- with . | toCSS | minify |
+{{ $variables := resources.Get "css/variables.scss" }}
+{{ $lightbox := resources.Get "css/lightbox.scss" }}
+{{ $filter := resources.Get "css/filter.scss" }}
+{{ $navIcon := resources.Get "css/nav-icon.scss" }}
+{{ $search := resources.Get "css/search.scss" }}
+{{ $main := resources.Get "css/main.scss" }}
+
+{{ $css := slice $variables $lightbox $filter $navIcon $search $main | resources.Concat "css/bundle.scss" | toCSS | minify |
 fingerprint }}
+
 <link
   rel="stylesheet"
-  href="{{ .RelPermalink }}"
-  integrity="{{ .Data.Integrity }}"
+  href="{{ $css.RelPermalink }}"
+  integrity="{{ $css.Data.Integrity }}"
   crossorigin="anonymous"
 />
-{{- end }} {{- end }}
