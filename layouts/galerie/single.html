@@ -6,6 +6,8 @@
   <!-- Lightbox -->
   {{ partial "lightbox" . }}
 
+  <h2 data-pagefind-body>{{ .Params.title_full }}</h2>
+
   {{ if .Params.info }}
     <table class="project-info">
       {{ range $row := .Params.info }}
@@ -18,20 +20,8 @@
   {{ end }}
 
 
-  <div class="project-description">
+  <div class="project-description" data-pagefind-body>
     {{ .Content }}
-  </div>
-
-  <div class="project-info">
-    <div>
-
-      <!-- Project Links -->
-      <div class="project-links">
-        {{ range $name, $link := .Params.links }}
-          <button class="btn"><a href="{{ $link }}" {{ if strings.HasPrefix $link "http" }} target="_blank"{{ end }}>{{ replace (upper $name) "_" " " }}</a></button>
-        {{ end }}
-      </div>
-    </div>
   </div>
 </main>
 {{ end }}
