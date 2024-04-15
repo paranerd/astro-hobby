@@ -3,9 +3,10 @@
 {{ partial "masthead" . }}
 
 <main>
+  <h2>Senden Sie uns eine Nachricht</h2>
   <form
     id="contact-form"
-    action="https://formspree.io/f/mpzvolbv"
+    action=""
     method="POST"
   >
     <div class="form-group">
@@ -27,27 +28,31 @@
         required
       ></textarea>
       <span class="bar"></span>
-      <label for="contact-form-description">Description</label>
+      <label for="contact-form-description">Nachricht</label>
     </div>
 
     <input type="text" name="_gotcha" style="display: none" />
 
+    <div id="recaptcha-disclaimer">
+      Diese Seite ist geschützt durch reCAPTCHA. Es gelten die Google
+      <a href="https://policies.google.com/privacy">Datenschutzerklärung</a> und
+      <a href="https://policies.google.com/terms">Nutzungsbedingungen</a>.
+    </div>
+
     <button
       class="btn g-recaptcha"
       type="submit"
-      data-sitekey="6Le70LYpAAAAAPP8vmzS0jL-Wm_MUOUoeVvRBR8c"
+      data-sitekey=""
       data-callback="onContactFormSubmit"
     >
-      LET'S WORK
+      Absenden
     </button>
 
-    <div id="contact-form-submit-response">Thank you for your message!</div>
-
-    <div id="recaptcha-disclaimer">
-      This site is protected by reCAPTCHA and the Google
-      <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-      <a href="https://policies.google.com/terms">Terms of Service</a> apply.
-    </div>
+    <div id="contact-form-submit-response">Vielen Dank für Ihre Nachricht!</div>
   </form>
 </main>
+{{ end }}
+
+{{ define "scripts" }}
+  <script src="https://www.google.com/recaptcha/api.js"></script>
 {{ end }}
