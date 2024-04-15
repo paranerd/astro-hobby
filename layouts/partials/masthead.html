@@ -1,7 +1,11 @@
 <div id="masthead-section">
   <h1>{{ $.Page.Title }}</h1>
 
+  {{ with .Resources.GetMatch "header.*" }}
+  <img src="{{ .RelPermalink }}" alt="Header" class="imgPositionCenter" />
+  {{ else }}
   <img src="/img/mond.jpg" alt="Mond" />
+  {{ end }}
 
   <div id="masthead-overlay"></div>
 </div>
