@@ -4,41 +4,39 @@
 {{ partial "masthead" . }}
 
 <main>
-  <div class="content">
-    <ul class="filters">
-      <li class="filter active" data-filter="all">Alle</li>
+  <ul class="filters">
+    <li class="filter active" data-filter="all">Alle</li>
 
-      {{ range $name, $taxonomy := .Site.Taxonomies }} {{ if eq "categories"
-      $name }} {{ range $key, $value := $taxonomy }} {{ if ge (where
-      $value.Pages "Section" "galerie") 1 }}
-      <li data-filter="{{ .Page.Title | urlize }}" class="filter">
-        {{ .Page.Title }}
-      </li>
-      {{ end }} {{ end }} {{ end }} {{ end }}
-    </ul>
+    {{ range $name, $taxonomy := .Site.Taxonomies }} {{ if eq "categories"
+    $name }} {{ range $key, $value := $taxonomy }} {{ if ge (where
+    $value.Pages "Section" "galerie") 1 }}
+    <li data-filter="{{ .Page.Title | urlize }}" class="filter">
+      {{ .Page.Title }}
+    </li>
+    {{ end }} {{ end }} {{ end }} {{ end }}
+  </ul>
 
-    <div id="gallery" class="filter-results">
-      {{ range (where .Pages "Type" "galerie") }}
-      <a
-        href="{{ .Page.RelPermalink }}"
-        class="gallery-item filter-item"
-        data-filters="{{ range .Params.categories }}{{ . | urlize }},{{ end }}"
-      >
-        {{ with .Resources.GetMatch "header.*" }}
-        {{ $image := .Resize "x400" }}
-        <div class="gallery-item-img">
-          <img
-            src="data:{{ .MediaType.Type }};base64,{{ $image.Content | base64Encode }}"
-          />
-        </div>
-        {{ end }}
-
-        <div class="gallery-item-title-wrapper">
-          <h2 class="gallery-item-title">{{ .Title }}</h2>
-        </div>
-      </a>
+  <div class="grid-view">
+    {{ range (where .Pages "Type" "galerie") }}
+    <a
+      href="{{ .Page.RelPermalink }}"
+      class="grid-item filter-item"
+      data-filters="{{ range .Params.categories }}{{ . | urlize }},{{ end }}"
+    >
+      {{ with .Resources.GetMatch "header.*" }}
+      {{ $image := .Resize "x400" }}
+      <div class="grid-item-img">
+        <img
+          src="data:{{ $image.MediaType.Type }};base64,{{ $image.Content | base64Encode }}"
+        />
+      </div>
       {{ end }}
-    </div>
+
+      <div class="grid-item-title-wrapper">
+        <h2 class="grid-item-title">{{ .Title }}</h2>
+      </div>
+    </a>
+    {{ end }}
   </div>
 </main>
 {{ end }}

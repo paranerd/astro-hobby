@@ -50,21 +50,21 @@ async function renderResults(target, results) {
   for (const result of results) {
     const resultData = await result.data();
 
-    const item = createElement('a', ['gallery-item'], target);
+    const item = createElement('a', ['grid-item'], target);
     item['href'] = resultData.url;
     item['aria-label'] = resultData.meta.title;
-    const imgWrapper = createElement('div', ['gallery-item-img'], item);
+    const imgWrapper = createElement('div', ['grid-item-img'], item);
     const img = createElement('img', null, imgWrapper);
     img['src'] = resultData.meta.image;
     console.log(resultData.meta.image);
     const titleWrapper = createElement(
       'div',
-      ['gallery-item-title-wrapper'],
+      ['grid-item-title-wrapper'],
       item
     );
     const title = createElement(
       'h2',
-      ['gallery-item-title'],
+      ['grid-item-title'],
       titleWrapper,
       resultData.meta.title
     );
