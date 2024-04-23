@@ -183,12 +183,15 @@ main {
 }
 
 #masthead-homepage {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   transition: margin;
+
+  @media only screen and (min-width: 992px) {
+    margin-top: 100px;
+  }
 
   h1 {
     margin: 0 3rem;
