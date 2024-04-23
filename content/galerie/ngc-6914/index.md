@@ -26,4 +26,4 @@ info:
 
 ![NGC 6914](header.jpg 'NGC 6914')
 
-![NGC 6914 mit Annotationen](header.jpg 'NGC 6914 mit Annotationen')
+![NGC 6914 mit Annotationen](ngc-6914-annotations.jpeg 'NGC 6914 mit Annotationen')
