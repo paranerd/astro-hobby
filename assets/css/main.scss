@@ -116,7 +116,7 @@ main {
   transition: height 2s ease-in-out;
 
   p img {
-    max-width: 50%;
+    max-width: 100%;
     cursor: pointer;
   }
 
@@ -140,6 +140,16 @@ main {
     &:hover {
       text-decoration: underline;
     }
+  }
+
+  h2 {
+    color: $highlight-color;
+  }
+}
+
+.project-description {
+  p {
+    text-align: center;
   }
 }
 
@@ -644,5 +654,17 @@ footer {
 
   &.reveal {
     height: 50px;
+  }
+}
+
+.equipment {
+  display: flex;
+
+  img {
+    max-width: 100%;
+  }
+
+  .equipment-col {
+    width: 50%;
   }
 }
