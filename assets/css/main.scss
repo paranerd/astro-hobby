@@ -132,8 +132,11 @@ main {
       margin: auto;
       display: block;
     }
+    
+    .project-description {
+      align-items: center;
+    }
 
-    h2,
     p {
       text-align: center;
     }
@@ -563,6 +566,11 @@ footer {
   tbody tr td:first-child {
     width: 40%;
   }
+}
+
+.project-description {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Form label animation */
