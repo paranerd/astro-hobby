@@ -132,6 +132,10 @@ main {
       margin: auto;
       display: block;
     }
+
+    p {
+      text-align: center;
+    }
   }
 
   p > a {
@@ -144,12 +148,6 @@ main {
 
   h2 {
     color: $highlight-color;
-  }
-}
-
-.project-description {
-  p {
-    text-align: center;
   }
 }
 
