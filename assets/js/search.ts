@@ -1,17 +1,22 @@
 window.addEventListener('DOMContentLoaded', async (event) => {
   const resultsDiv = document.getElementById('search-results');
+  // @ts-ignore
   const pagefind = await import('/pagefind/pagefind.js');
+
+  if (!resultsDiv) return;
 
   document
     .getElementById('search-input')
-    .addEventListener('input', async (e) => {
-      if (!e.target.value) {
+    ?.addEventListener('input', async (e) => {
+      if (!(e.target as HTMLInputElement)?.value) {
         hideElement('search-empty');
         resultsDiv.innerHTML = '';
         return;
       }
 
-      const search = await pagefind.debouncedSearch(e.target.value);
+      const search = await pagefind.debouncedSearch(
+        (e.target as HTMLInputElement).value
+      );
 
       if (search) {
         resultsDiv.innerHTML = '';
@@ -25,25 +30,26 @@ window.addEventListener('DOMContentLoaded', async (event) => {
       }
     });
 
-  document.getElementById('search-clear').addEventListener('click', () => {
-    document.getElementById('search-input').value = '';
+  document.getElementById('search-clear')?.addEventListener('click', () => {
+    (document.getElementById('search-input') as HTMLInputElement)!.value = '';
   });
 
   const urlParams = new URLSearchParams(window.location.search);
   const query = urlParams.get('q');
 
   if (query) {
-    document.querySelector('#search input').value = query;
-    document.querySelector('#search input').dispatchEvent(new Event('input'));
+    (document.querySelector('#search input') as HTMLInputElement)!.value =
+      query;
+    document.querySelector('#search input')?.dispatchEvent(new Event('input'));
   }
 });
 
 function hideElement(id) {
-  document.getElementById(id).classList.add('hidden');
+  document.getElementById(id)?.classList.add('hidden');
 }
 
 function unhideElement(id) {
-  document.getElementById(id).classList.remove('hidden');
+  document.getElementById(id)?.classList.remove('hidden');
 }
 
 async function renderResults(target, results) {

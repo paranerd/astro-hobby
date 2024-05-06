@@ -1,11 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+  setupLightbox();
+});
+
 function setupLightbox() {
   const lightbox = document.getElementById('lightbox');
-
-  if (!lightbox) return;
-
   const images = document.querySelectorAll('main img:not(#lightbox-img)');
   const lightboxImgWrapper = document.getElementById('lightbox-img-wrapper');
-  const lightboxImg = document.getElementById('lightbox-img');
+  const lightboxImg = document.getElementById(
+    'lightbox-img'
+  ) as HTMLImageElement;
   const lightboxTitle = document.getElementById('lightbox-title');
   const lightboxFullscreen = document.getElementById('lightbox-fullscreen');
   const lightboxExitFullscreen = document.getElementById(
@@ -15,41 +18,48 @@ function setupLightbox() {
   const lightboxZoomOut = document.getElementById('lightbox-zoom-out');
   const lightboxClose = document.getElementById('lightbox-close');
 
-  let translateOrigin = { x: 0, y: 0 };
+  if (!lightbox || !lightboxImg || !lightboxTitle || !lightboxImgWrapper)
+    return;
+
   let mouseOrigin = { x: 0, y: 0 };
+  let translateOrigin = { x: 0, y: 0 };
+  let translate = {
+    x: 0,
+    y: 0,
+  };
 
   // Prevent image dragging
   lightboxImg.draggable = false;
 
   // Close lightbox on click on img wrapper
-  lightboxImgWrapper.addEventListener('click', (e) => {
+  lightboxImgWrapper?.addEventListener('click', (e) => {
     if (e.target !== e.currentTarget) return;
 
     closeLightbox();
   });
 
   // Enter fullscreen
-  lightboxFullscreen.addEventListener('click', () => {
+  lightboxFullscreen?.addEventListener('click', () => {
     toggleFullScreen();
   });
 
   // Exit fullscreen
-  lightboxExitFullscreen.addEventListener('click', () => {
+  lightboxExitFullscreen?.addEventListener('click', () => {
     toggleFullScreen();
   });
 
   // Zoom in
-  lightboxZoomIn.addEventListener('click', () => {
+  lightboxZoomIn?.addEventListener('click', () => {
     zoomIn();
   });
 
   // Zoom out
-  lightboxZoomOut.addEventListener('click', () => {
+  lightboxZoomOut?.addEventListener('click', () => {
     zoomOut();
   });
 
   // Close
-  lightboxClose.addEventListener('click', () => {
+  lightboxClose?.addEventListener('click', () => {
     zoomOut();
     closeLightbox();
   });
@@ -57,16 +67,16 @@ function setupLightbox() {
   // Attach click event to all images in content
   images.forEach((img) => {
     img.addEventListener('click', (e) => {
-      lightboxImg.src = e.target.src;
-      lightboxImg.alt = e.target.title;
-      lightboxTitle.innerText = e.target.title;
+      lightboxImg.src = (e.target as HTMLImageElement).src;
+      lightboxImg.alt = (e.target as HTMLImageElement).title;
+      lightboxTitle.innerText = (e.target as HTMLImageElement).title;
 
       openLightbox();
     });
   });
 
   function openLightbox() {
-    lightbox.classList.add('open');
+    lightbox?.classList.add('open');
   }
 
   function closeLightbox() {
@@ -74,34 +84,34 @@ function setupLightbox() {
       document.exitFullscreen();
     }
 
-    lightbox.classList.remove('open');
+    lightbox?.classList.remove('open');
   }
 
   function toggleFullScreen() {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
-      lightboxFullscreen.classList.add('hidden');
-      lightboxExitFullscreen.classList.remove('hidden');
+      lightboxFullscreen?.classList.add('hidden');
+      lightboxExitFullscreen?.classList.remove('hidden');
     } else if (document.exitFullscreen) {
       document.exitFullscreen();
-      lightboxFullscreen.classList.remove('hidden');
-      lightboxExitFullscreen.classList.add('hidden');
+      lightboxFullscreen?.classList.remove('hidden');
+      lightboxExitFullscreen?.classList.add('hidden');
     }
   }
 
   function zoomIn() {
     lightboxImg.classList.add('zoom');
-    lightboxZoomIn.classList.add('hidden');
-    lightboxZoomOut.classList.remove('hidden');
+    lightboxZoomIn?.classList.add('hidden');
+    lightboxZoomOut?.classList.remove('hidden');
 
     addMouseListeners();
   }
 
   function zoomOut() {
     lightboxImg.classList.remove('zoom');
-    lightboxZoomIn.classList.remove('hidden');
-    lightboxZoomOut.classList.add('hidden');
-    lightboxImgWrapper.style.transform = 'translate(0px, 0px)';
+    lightboxZoomIn?.classList.remove('hidden');
+    lightboxZoomOut?.classList.add('hidden');
+    lightboxImgWrapper!.style.transform = 'translate(0px, 0px)';
 
     removeMouseListeners();
   }
@@ -114,12 +124,12 @@ function setupLightbox() {
     lightboxImg.removeEventListener('mousedown', mouseDown);
   }
 
-  function mouseDown(e) {
-    if (lightboxImgWrapper.style.transform) {
+  function mouseDown(e: MouseEvent) {
+    if (lightboxImgWrapper?.style.transform) {
       const translation = lightboxImgWrapper.style.transform.match(/-*\d+/g);
       translateOrigin = {
-        x: parseInt(translation[0], 10),
-        y: parseInt(translation[1], 10),
+        x: parseInt(translation![0], 10),
+        y: parseInt(translation![1], 10),
       };
     }
 
@@ -133,38 +143,39 @@ function setupLightbox() {
     window.removeEventListener('mousemove', moveImg, true);
   }
 
-  let prevTranslate = {
-    x: 0,
-    y: 0,
-  };
-
-  function moveImg(e) {
-    // Get current position
+  function moveImg(e: MouseEvent) {
+    // Where are we now?
     const currentPos = lightboxImg.getBoundingClientRect();
 
+    console.log(translateOrigin, translate);
+
+    // Where would we go next?
     const nextTranslate = {
       x: translateOrigin.x + e.clientX - mouseOrigin.x,
       y: translateOrigin.y + e.clientY - mouseOrigin.y,
     };
 
-    const diff = {
-      x: nextTranslate.x - prevTranslate.x,
-      y: nextTranslate.y - prevTranslate.y,
+    // How far would we move?
+    const delta = {
+      x: nextTranslate.x - translate.x,
+      y: nextTranslate.y - translate.y,
     };
 
-    prevTranslate = {
+    // Where do we actually go next?
+    // Only move if inside boundaries, otherwise re-use previous translate
+    translate = {
       x:
-        currentPos.x + diff.x >= 0 ||
-        -currentPos.x + window.innerWidth - diff.x >= currentPos.width
-          ? prevTranslate.x
+        currentPos.x + delta.x >= 0 ||
+        window.innerWidth - currentPos.x - delta.x >= currentPos.width
+          ? translate.x
           : nextTranslate.x,
       y:
-        currentPos.y + diff.y >= 0 ||
-        -currentPos.y + window.innerHeight - diff.y >= currentPos.height
-          ? prevTranslate.y
+        currentPos.y + delta.y >= 0 ||
+        window.innerHeight - currentPos.y - delta.y >= currentPos.height
+          ? translate.y
           : nextTranslate.y,
     };
 
-    lightboxImgWrapper.style.transform = `translate(${prevTranslate.x}px, ${prevTranslate.y}px)`;
+    lightboxImgWrapper!.style.transform = `translate(${translate.x}px, ${translate.y}px)`;
   }
 }

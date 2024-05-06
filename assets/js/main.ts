@@ -1,3 +1,7 @@
+interface Window {
+  onContactFormSubmit: Function;
+}
+
 document.addEventListener(
   'DOMContentLoaded',
   () => {
@@ -6,8 +10,9 @@ document.addEventListener(
 
     window.addEventListener('scroll', () => {
       if (mastheadHomepage) {
-        mastheadHomepage.style.opacity =
-          1 - window.scrollY / (window.innerHeight / 2);
+        mastheadHomepage.style.opacity = String(
+          1 - window.scrollY / (window.innerHeight / 2)
+        );
         mastheadHomepage.style.marginTop = -window.scrollY / 2 + 'px';
       }
 
@@ -19,21 +24,19 @@ document.addEventListener(
     });
 
     setupFlyoutMenu();
-    setupFilter(false);
-    setupLightbox();
   },
   false
 );
 
 function setupFlyoutMenu() {
-  document.getElementById('nav-icon').addEventListener('click', (e) => {
-    document.getElementById('nav-icon').classList.toggle('open');
-    document.getElementById('flyout').classList.toggle('open');
+  document.getElementById('nav-icon')?.addEventListener('click', (e) => {
+    document.getElementById('nav-icon')?.classList.toggle('open');
+    document.getElementById('flyout')?.classList.toggle('open');
   });
 }
 
 window.onContactFormSubmit = function () {
-  const form = document.getElementById('contact-form');
+  const form = document.getElementById('contact-form') as HTMLFormElement;
   form.submit();
   form.reset();
 
@@ -41,10 +44,9 @@ window.onContactFormSubmit = function () {
     'contact-form-submit-response'
   );
 
-  submitResponseEl.classList.add('reveal');
+  submitResponseEl?.classList.add('reveal');
 
   setTimeout(() => {
-    submitResponseEl.classList.remove('reveal');
+    submitResponseEl?.classList.remove('reveal');
   }, 2000);
 };
-

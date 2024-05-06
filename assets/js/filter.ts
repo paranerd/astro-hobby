@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', () => {
+  setupFilter(false);
+});
+
 function setupFilter(alwaysFade) {
   const filters = document.querySelectorAll('.filter');
 
@@ -9,8 +13,8 @@ function setupFilter(alwaysFade) {
         .forEach((el) => el.classList.remove('active'));
 
       // Set current filter active
-      event.target.classList.add('active');
-      applyFilter(event.target.dataset.filter);
+      (event.target as HTMLElement).classList.add('active');
+      applyFilter((event.target as HTMLElement).dataset.filter);
     })
   );
 
@@ -20,7 +24,7 @@ function setupFilter(alwaysFade) {
     if (alwaysFade) {
       el.addEventListener('animationend', (e) => {
         console.log('called');
-        e.target.classList.remove('filterFadeIn');
+        (e.target as HTMLElement).classList.remove('filterFadeIn');
       });
     }
   });
@@ -28,9 +32,11 @@ function setupFilter(alwaysFade) {
 
 function applyFilter(filter) {
   document.querySelectorAll('.filter-item').forEach((el) => {
-    const elementFilters = el.dataset.filters.split(',').filter((el) => el);
+    const elementFilters = (el as HTMLElement).dataset.filters
+      ?.split(',')
+      .filter((el) => el);
 
-    if (filter === 'all' || elementFilters.includes(filter)) {
+    if (filter === 'all' || elementFilters?.includes(filter)) {
       el.classList.add('filterFadeIn');
       el.classList.remove('inactive');
     } else {
