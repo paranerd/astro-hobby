@@ -147,8 +147,6 @@ function setupLightbox() {
     // Where are we now?
     const currentPos = lightboxImg.getBoundingClientRect();
 
-    console.log(translateOrigin, translate);
-
     // Where would we go next?
     const nextTranslate = {
       x: translateOrigin.x + e.clientX - mouseOrigin.x,
