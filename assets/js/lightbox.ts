@@ -22,10 +22,23 @@ function setupLightbox() {
     return;
 
   let mouseOrigin = { x: 0, y: 0 };
-  let translateOrigin = { x: 0, y: 0 };
+
   let translate = {
+    origin: {
+      x: 0,
+      y: 0,
+    },
+    current: {
+      x: 0,
+      y: 0,
+    },
+  };
+
+  let imageOrigin = {
     x: 0,
     y: 0,
+    width: 0,
+    height: 0,
   };
 
   // Prevent image dragging
@@ -127,13 +140,22 @@ function setupLightbox() {
   function mouseDown(e: MouseEvent) {
     if (lightboxImgWrapper?.style.transform) {
       const translation = lightboxImgWrapper.style.transform.match(/-*\d+/g);
-      translateOrigin = {
-        x: parseInt(translation![0], 10),
-        y: parseInt(translation![1], 10),
+
+      translate = {
+        origin: {
+          x: parseInt(translation![0], 10),
+          y: parseInt(translation![1], 10),
+        },
+        current: {
+          x: parseInt(translation![0], 10),
+          y: parseInt(translation![1], 10),
+        },
       };
     }
 
     mouseOrigin = { x: e.clientX, y: e.clientY };
+
+    imageOrigin = lightboxImg.getBoundingClientRect();
 
     window.addEventListener('mousemove', moveImg, true);
     window.addEventListener('mouseup', mouseUp, false);
@@ -144,36 +166,29 @@ function setupLightbox() {
   }
 
   function moveImg(e: MouseEvent) {
-    // Where are we now?
-    const currentPos = lightboxImg.getBoundingClientRect();
-
-    // Where would we go next?
-    const nextTranslate = {
-      x: translateOrigin.x + e.clientX - mouseOrigin.x,
-      y: translateOrigin.y + e.clientY - mouseOrigin.y,
-    };
-
-    // How far would we move?
+    // Get mouse move distance
     const delta = {
-      x: nextTranslate.x - translate.x,
-      y: nextTranslate.y - translate.y,
+      x: e.clientX - mouseOrigin.x,
+      y: e.clientY - mouseOrigin.y,
     };
 
-    // Where do we actually go next?
-    // Only move if inside boundaries, otherwise re-use previous translate
-    translate = {
-      x:
-        currentPos.x + delta.x >= 0 ||
-        window.innerWidth - currentPos.x - delta.x >= currentPos.width
-          ? translate.x
-          : nextTranslate.x,
-      y:
-        currentPos.y + delta.y >= 0 ||
-        window.innerHeight - currentPos.y - delta.y >= currentPos.height
-          ? translate.y
-          : nextTranslate.y,
-    };
+    // Update horizontal translate value if within boundaries
+    if (
+      imageOrigin.x + delta.x <= 0 &&
+      window.innerWidth - imageOrigin.x - delta.x <= imageOrigin.width
+    ) {
+      translate.current.x = translate.origin.x + delta.x;
+    }
 
-    lightboxImgWrapper!.style.transform = `translate(${translate.x}px, ${translate.y}px)`;
+    // Update vertical translate value if within boundaries
+    if (
+      imageOrigin.y + delta.y <= 0 &&
+      window.innerHeight - imageOrigin.y - delta.y <= imageOrigin.height
+    ) {
+      translate.current.y = translate.origin.y + delta.y;
+    }
+
+    // Update translate on element
+    lightboxImgWrapper!.style.transform = `translate(${translate.current.x}px, ${translate.current.y}px)`;
   }
 }
