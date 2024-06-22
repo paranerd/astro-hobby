@@ -1,6 +1,6 @@
 ---
 title: 'M 92'
-title_full: 'M 92 (NGC 6341)'
+title_full: 'Messier 92 (NGC 6341)'
 date: '2024-06-22'
 author: michael
 categories:
