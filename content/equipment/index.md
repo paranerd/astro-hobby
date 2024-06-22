@@ -13,8 +13,6 @@ layout: 'equipment'
 
 - Skywatcher Esprit 80 ED 80 mm F/5 FPL 53 ED Triplet Apochromat
 
-- Skywatcher Esprit 120 ED 120mm F/7 FPL 53 ED Triplet Apochromat
-
 - Lacerta Carbon Fotonewton 250mm F4
 
 - Carl Zeiss Jena AS 100/1000
