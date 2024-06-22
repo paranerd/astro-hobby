@@ -5,7 +5,7 @@ date: '2024-06-21'
 author: michael
 categories:
   - sternhaufen
-die info:
+info:
   - key: 'Sternbild'
     value: 'Canes Venatici (Jagdhunde)'
   - key: 'Objekt'
