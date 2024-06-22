@@ -30,4 +30,6 @@ info:
 
 ![M-92](header.jpg 'M-92')
 
-![M-92 mit Annotationen](m92-annotated.jpeg 'M-92 mit Annotationen')
+![M-92](m92.jpg 'M-92')
+
+![M-92 mit Annotationen](m92-Annotated.jpeg 'M-92 mit Annotationen')
