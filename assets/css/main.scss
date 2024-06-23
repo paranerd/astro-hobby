@@ -663,12 +663,21 @@ footer {
 
 .equipment {
   display: flex;
+  flex-direction: column;
+
+  @media only screen and (min-width: 992px) {
+    flex-direction: row;
+  }
 
   img {
     max-width: 100%;
   }
 
   .equipment-col {
-    width: 50%;
+    width: 100%;
+
+    @media only screen and (min-width: 992px) {
+      width: 50%;
+    }
   }
 }
