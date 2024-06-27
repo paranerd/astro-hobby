@@ -22,7 +22,7 @@ Polarlichter entstehen, wenn elektrisch geladene Teilchen des Sonnenwinds aus de
 Das grüne Polarlicht wird hauptsächlich von Sauerstoffatomen in etwa 80 bis 150 Kilometern Höhe erzeugt. Das rote Polarlicht dagegen hat seinen Ursprung meist bei Sauerstoffatomen in etwa 200 Kilometern Höhe. Violette und blaue Polarlichter gehen meist von Stickstoffatomen aus.
 
 
-Ein wirklich starker Sonnensturm verursachte am 10. und 11. Mai 2024 schöne Polarlichter die bis in den Süden Deutschlands zu sehen waren. Hier ein Video der Aurora borealis, aufgenommen mit meiner Allskykamera. 
+Ein wirklich starker Sonnensturm verursachte am 10. und 11. Mai 2024 schöne Polarlichter, die bis in den Süden Deutschlands zu sehen waren. Hier ein Video der Aurora borealis, aufgenommen mit meiner Allskykamera. 
 
 
 {{< video src="polarlicht-video.mp4" controls="yes" preload="auto" >}}
