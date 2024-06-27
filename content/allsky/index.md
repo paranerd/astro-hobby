@@ -25,4 +25,4 @@ Das grüne Polarlicht wird hauptsächlich von Sauerstoffatomen in etwa 80 bis 15
 Ein wirklich starker Sonnensturm verursachte am 10. und 11. Mai 2024 schöne Polarlichter, die bis in den Süden Deutschlands zu sehen waren. Hier ein Video der Aurora borealis, aufgenommen mit meiner Allskykamera. 
 
 
-{{< video src="polarlicht-video.mp4" controls="yes" preload="auto" >}}
+{{< video src="polarlichter-video.mp4" controls="yes" preload="auto" >}}
