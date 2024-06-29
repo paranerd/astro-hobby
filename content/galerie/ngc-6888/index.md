@@ -29,3 +29,5 @@ info:
 ---
 
 ![NGC 6888](header.jpg 'NGC 6888')
+
+![NGC 6888 HSO](NGC6888HSO.jpg 'NGC 6888 HSO')
