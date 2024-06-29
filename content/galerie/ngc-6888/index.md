@@ -30,4 +30,6 @@ info:
 
 ![NGC 6888](header.jpg 'NGC 6888')
 
+Aufnahme in der HSO Farbpalette
+
 ![NGC 6888 HSO](NGC6888HSO.jpg 'NGC 6888 HSO')
