@@ -28,6 +28,11 @@ info:
     value: 'ZWO ASI071 MC PRO'
 ---
 
+NGC 6888 ist ein Emissionsnebel im Sternbild Schwan der von einem Wolf-Rayed-Stern (WR 136) beleuchtet wird.
+Das Gas des Nebels wurde vermutlich ebenfalls von diesem Stern abgestoßen.
+Links oben im Bild ist der Seifenblasen-Nebel PN G75.5+1.7 zu erkennen. Dieser planetarische Nebel wurde erst
+im Jahr 2008 von Amateurastronomen entdeckt.
+
 ![NGC 6888](header.jpg 'NGC 6888')
 
 Aufnahme in der HSO Farbpalette
