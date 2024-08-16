@@ -9,7 +9,7 @@ info:
   - key: 'Sternbild'
     value: 'Kepheus'
   - key: 'Objekt'
-    value: 'IC 1386A'
+    value: 'IC 1396A'
   - key: 'Aufnahmedatum'
     value: '24./28.07.2024'
   - key: 'Entfernung'
