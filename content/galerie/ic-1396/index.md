@@ -1,7 +1,7 @@
 ---
-title: 'IC 1396'
-title_full: 'IC 1396 Elefantenrüssel-Nebel'
-date: '2023-03-15'
+title: 'IC 1396A'
+title_full: 'IC 1396A Elefantenrüssel-Nebel'
+date: '2024-07-28'
 author: michael
 categories:
   - nebel
@@ -9,21 +9,19 @@ info:
   - key: 'Sternbild'
     value: 'Kepheus'
   - key: 'Objekt'
-    value: 'IC 1386'
+    value: 'IC 1386A'
   - key: 'Aufnahmedatum'
-    value: 'Mai 2020'
+    value: '24./28.07.2024'
   - key: 'Entfernung'
-    value: '2.500 Lj'
-  - key: 'Helligkeit'
-    value: '3.5 mag'
+    value: '2.400 Lj'
   - key: 'Belichtung'
-    value: '24 x 300s gesamt: 120min'
+    value: '48 x 300s gesamt: 240min'
   - key: 'Kalibrierung'
-    value: 'Dark/Flat'
+    value: 'Dark/Flat/Bias'
   - key: 'Teleskop'
-    value: 'Esprit ED 120'
+    value: '250/1000 Lacerta Fotonewton'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
 ---
 
-![IC 1396](header.jpg 'IC 1396')
+![IC 1396A](header.jpg 'IC 1396A')
