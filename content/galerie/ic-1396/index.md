@@ -25,3 +25,6 @@ info:
 ---
 
 ![IC 1396A](header.jpg 'IC 1396A')
+
+Der Elefantenrüsselnebel, auch bekannt als IC 1396A, ist eine hell berandete Globule, also eine Ansammlung von interstellarem Gas und Staub.
+Die Globule gehört zu IC 1396, einem H-II-Gebiet mit eingebettetem Sternhaufen. Für das Foto wurde die HSO Farbpalette verwendet.
