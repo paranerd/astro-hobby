@@ -31,4 +31,4 @@ info:
 ![NGC 281](header.jpg 'NGC 281')
 
 NGC 281 ist ein Emissionsnebel im Sternbild Kassiopeia.  In NGC 281 ist der offene Sternhaufen IC 1590 eingebettet, dessen Sterne um das Zentrum des Nebels verstreut sind.
-Der Nebel enthält auch mehrere Bok-Globulen, in denen durch Infrarotaufnahmen Anzeichen für Sternentstehung festgestellt werden konnten.
+Der Nebel enthält auch mehrere Bok-Globulen, in denen durch Infrarotaufnahmen Anzeichen für Sternentstehung festgestellt werden konnten. Für das Foto wurde die HSO Farbpalette verwendet.
