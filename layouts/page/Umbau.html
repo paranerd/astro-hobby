@@ -1,0 +1,12 @@
+{{ define "main" }}
+<!-- Masthead -->
+{{ partial "masthead" . }}
+
+<main class="centered">
+  <!-- Lightbox -->
+  {{ partial "lightbox" . }}
+
+  <!-- Content -->
+  {{ .Content }}
+</main>
+{{ end }}
