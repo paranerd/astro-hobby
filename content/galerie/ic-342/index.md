@@ -1,7 +1,7 @@
 ---
 title: 'IC 342'
 title_full: 'IC 342  Die "verborgene Galaxie"'
-date: '07.10.2024'
+date: '2024-10-7'
 author: michael
 categories:
   - galaxien
