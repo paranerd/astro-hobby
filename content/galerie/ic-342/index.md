@@ -28,9 +28,12 @@ info:
     value: 'ZWO ASI071 MC PRO'
 ---
 
+
 IC 342 ist eine Balken-Spiralgalaxie mit aktivem Galaxienkern im Sternbild Giraffe am Nordsternhimmel.
 Die Galaxie ist eine der beiden hellsten Galaxien in der Maffei-Galaxiengruppe, der Galaxiengruppe, die der Lokalen Gruppe am nächsten liegt.
 IC 342 befindet sich in der Nähe des galaktischen Äquators, wo Staubschleier die Beobachtung und Fotografie schwierig machen.
 Daher auch die Bezeichnung „verborgene Galaxie“.
 
 ![IC-342](header.jpg 'IC-342')
+
+![IC-342](IC-342.jpg 'IC-342')
