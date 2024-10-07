@@ -35,5 +35,3 @@ IC 342 befindet sich in der Nähe des galaktischen Äquators, wo Staubschleier d
 Daher auch die Bezeichnung „verborgene Galaxie“.
 
 ![IC-342](header.jpg 'IC-342')
-
-![IC-342](IC-342.jpg 'IC-342')
