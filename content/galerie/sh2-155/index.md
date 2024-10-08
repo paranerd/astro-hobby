@@ -1,7 +1,7 @@
 ---
 title: 'Sh2-155'
 title_full: 'Sh2-155 - Caldwell 9 - Der Höhlennebel'
-date: ''
+date: '2024-10-08'
 author: michael
 categories:
   - nebel
