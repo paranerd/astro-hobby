@@ -30,4 +30,4 @@ info:
 
 ![Sh2-155](header.jpg 'Sh2-155')
 
-![Sh2-155 mit Annotationen](Sh2-155_Annotated.jpg 'Sh2-155 mit Annotationen')
+![Sh2-155 mit Annotationen](Sh2-155-Annotated.jpg 'Sh2-155 mit Annotationen')
