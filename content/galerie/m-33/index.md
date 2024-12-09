@@ -30,4 +30,4 @@ info:
 
 ![M-33](header.jpg 'M-33')
 
-![M-33 mit Annotationen](m33-annotated.jpeg 'M-33 mit Annotationen')
+![M-33 mit Annotationen](m33_Annotated.jpeg 'M-33 mit Annotationen')
