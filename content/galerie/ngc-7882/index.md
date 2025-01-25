@@ -1,6 +1,6 @@
 ---
-title: 'NGC 7882'
-title_full: 'Emissionsnebel NGC 7882 (Cederblad 214)'
+title: 'NGC 7822'
+title_full: 'Emissionsnebel NGC 7822'
 date: '2023-09-26'
 author: michael
 categories:
@@ -9,7 +9,7 @@ info:
   - key: 'Sternbild'
     value: 'Kepheus'
   - key: 'Objekt'
-    value: 'NGC 7882'
+    value: 'NGC 7822'
   - key: 'Aufnahmedatum'
     value: '10.08. und 11.08.2023'
   - key: 'Entfernung'
