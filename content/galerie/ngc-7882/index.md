@@ -1,6 +1,6 @@
 ---
 title: 'NGC 7882'
-title_full: 'M 31 (Andromeda Galaxie)'
+title_full: 'Emissionsnebel NGC 7882 (Cederblad 214)'
 date: '2023-09-26'
 author: michael
 categories:
