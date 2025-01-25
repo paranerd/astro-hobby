@@ -24,9 +24,9 @@ info:
     value: 'ZWO ASI071 MC PRO'
 ---
 
-![NGC 7882](header.jpg 'NGC 7882')
+![NGC 7822](header.jpg 'NGC 7822')
 
-## NGC 7882 Hubble Farbpalette
+## NGC 7822 Hubble Farbpalette
 
 ![NGC 7882 Hubble Farbpalette](ngc-7882-hubble-1.jpeg 'NGC 7882 Hubble Farbpalette')
 
