@@ -30,11 +30,6 @@ info:
 
 ![IC-410](header.jpg 'IC-410')
 
-IC 410 im Sternbild Fuhrmann ist ein großflächiger Emmissionsnebel der den offenen Sternhaufen NGC 1893
-umgibt. Die heißen Sterne des Sternhaufens regen das Gas des Nebels zum leuchten an. Innerhalb von IC 410
-befinden sich zwei Globulen aus dichterem, kühlern Staub und Gas die wie zwei Kaulquappen aussehen. Die
-beiden Globulen (Simeis 129 und Simeis 130) haben eine Ausdehnung von ca. 10 Lichtjahren und gelten als
-Orte der Sternentstehung.
+IC 410 im Sternbild Fuhrmann ist ein großflächiger Emmissionsnebel der den offenen Sternhaufen NGC 1893 umgibt. Die heißen Sterne des Sternhaufens regen das Gas des Nebels zum leuchten an. Innerhalb von IC 410 befinden sich zwei Globulen aus dichterem, kühlern Staub und Gas die wie zwei Kaulquappen aussehen. Die beiden Globulen (Simeis 129 und Simeis 130) haben eine Ausdehnung von ca. 10 Lichtjahren und gelten als Orte der Sternentstehung.
 
 ![IC-410](IC410.jpg 'IC-410')
-
