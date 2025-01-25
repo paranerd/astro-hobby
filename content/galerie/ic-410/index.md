@@ -30,5 +30,5 @@ info:
 
 ![IC-410](header.jpg 'IC-410')
 
-![Sh2-155 mit Annotationen](Sh2-155-Annotated.jpg 'Sh2-155 mit Annotationen')
+![IC-410](IC410.jpg 'IC-410')
 
