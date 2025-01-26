@@ -26,6 +26,8 @@ info:
     value: '250/1000 Lacerta Fotonewton'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
+  - key: 'Filter'
+    value: 'Optolong 2" L-enhance Nebelfilter'
 ---
 
 ![IC-410](header.jpg 'IC-410')
