@@ -30,4 +30,4 @@ info:
     value: 'Optolong 2" L-enhance Nebelfilter'
 ---
 
-![NGC-2246](header.jpg 'NGC-2246')
+![NGC 2246](header.jpg 'NGC 2246')
