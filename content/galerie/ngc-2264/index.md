@@ -19,7 +19,7 @@ info:
   - key: 'Helligkeit'
     value: '4,1 mag'
   - key: 'Belichtung'
-    value: '84 x 300s gesamt: 7 h'
+    value: '84 x 300s gesamt: 7h'
   - key: 'Kalibrierung'
     value: 'Dark/Flat/Bias'
   - key: 'Teleskop'
