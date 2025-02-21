@@ -30,7 +30,10 @@ info:
     value: 'Optolong 2" L-enhance Nebelfilter'
 ---
 
-Der Emissionsnebel NGC 2264 umfasst gleich mehrere sehr schöne astronomische Objekte. Dazu gehört der Kegelnebel, der Weihnachtsbaumhaufen, der Schneeflockenhaufen und der Fuchspelznebel. Dieses Gebiet ist von astronomischem Interesse, da es als junges Sternentstehungsgebiet gilt. Der Kegelnebel erstreckt sich über ca. sieben Lichtjahre. NGC 2264 wurde im Januar 1784 von Wilhelm Herschel entdeckt.
+
+Der Emissionsnebel NGC 2264 umfasst gleich mehrere sehr schöne astronomische Objekte. Dazu gehört der Kegelnebel, der Weihnachtsbaumhaufen, der Schneeflockenhaufen und der Fuchspelznebel.
+Dieses Gebiet ist von astronomischem Interesse, da es als junges Sternentstehungsgebiet gilt.
+Der Kegelnebel erstreckt sich über ca.sieben Lichtjahre. NGC 2264 wurde im Januar 1784 von Wilhelm Herschel entdeckt.
 
 
 ![NGC-2264](header.jpg 'NGC-2264')
