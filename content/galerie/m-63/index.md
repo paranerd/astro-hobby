@@ -1,6 +1,6 @@
 ---
 title: 'M 63'
-title_full: 'Messier 63 Die Sonnenblumen Galaxie'
+title_full: 'Messier 63 (Sonnenblumen Galaxie)'
 date: '2025-03-28'
 author: michael
 categories:
@@ -13,19 +13,19 @@ info:
   - key: 'Aufnahmedatum'
     value: '27./28.03.2025'
   - key: 'Entfernung'
-    value: 'ca. 25 Millionen Lichtjahre'
+    value: '25 Millionen Lichtjahre'
   - key: 'Durchmesser'
     value: '50.000 Lichtjahre'
   - key: 'Helligkeit'
-    value: '8,5 mag'
+    value: '8.5 mag'
   - key: 'Belichtung'
-    value: '76 x 300s gesamt: 6,3 h'
+    value: '76 x 300s gesamt: 6,3h'
   - key: 'Kalibrierung'
-    value: 'Dark/Flat/Bias'
+    value: 'Dark/Flat'
   - key: 'Teleskop'
-    value: '250/1000 Lacerta Fotonewton'
+    value: 'Esprit ED 80'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
-  ---
+---
 
 ![M-63](header.jpg 'M-63')
