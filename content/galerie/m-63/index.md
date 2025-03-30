@@ -21,7 +21,7 @@ info:
   - key: 'Belichtung'
     value: '76 x 300s gesamt: 6,3h'
   - key: 'Kalibrierung'
-    value: 'Dark/Flat'
+    value: 'Dark/Flat/Bias'
   - key: 'Teleskop'
     value: '250/1000 Lacerta Fotonewton'
   - key: 'Kamera'
