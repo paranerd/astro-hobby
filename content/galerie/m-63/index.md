@@ -23,7 +23,7 @@ info:
   - key: 'Kalibrierung'
     value: 'Dark/Flat'
   - key: 'Teleskop'
-    value: 'Esprit ED 80'
+    value: '250/1000 Lacerta Fotonewton'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
 ---
