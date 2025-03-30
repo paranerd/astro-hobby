@@ -4,7 +4,7 @@ title_full: 'Messier 63 Die Sonnenblumen Galaxie'
 date: '2025-03-28'
 author: michael
 categories:
-  - Galaxien
+  - galaxien
 info:
   - key: 'Sternbild'
     value: 'Jagdhunde'
