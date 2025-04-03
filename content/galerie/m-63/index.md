@@ -11,7 +11,7 @@ info:
   - key: 'Objekt'
     value: 'M 63'
   - key: 'Aufnahmedatum'
-    value: '27./28.03.2025'
+    value: '27./28.03./01.04.2025'
   - key: 'Entfernung'
     value: '25 Millionen Lichtjahre'
   - key: 'Durchmesser'
