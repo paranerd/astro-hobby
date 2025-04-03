@@ -11,7 +11,7 @@ info:
   - key: 'Objekt'
     value: 'M 65/ M66/ NGC 3628'
   - key: 'Aufnahmedatum'
-    value: '17./18.03./19.03.2025'
+    value: '17./18./19.03.2025'
   - key: 'Entfernung'
     value: '35 Millionen Lichtjahre'
   - key: 'Durchmesser'
