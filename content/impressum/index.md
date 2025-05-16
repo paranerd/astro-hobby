@@ -1,15 +1,14 @@
 ---
 title: 'Impressum'
-layout: 'impressum'
 ---
 
 ## Angaben gemäß § 5 TMG
 
-{{< env "HUGO_NAME" >}}<br />
+{{< env key="HUGO_NAME" linebreak=true >}}
 
-{{< env "HUGO_STREET" >}}<br />
+{{< env key="HUGO_STREET" linebreak=true >}}
 
-{{< env "HUGO_CITY" >}}<br />
+{{< env key="HUGO_CITY" linebreak=true >}}
 
 ## Kontakt
 

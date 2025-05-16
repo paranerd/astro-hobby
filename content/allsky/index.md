@@ -1,6 +1,5 @@
 ---
 title: 'Allsky'
-layout: 'allsky'
 ---
 
 ## Perseiden

@@ -1,4 +1,3 @@
 ---
 title: 'Kontakt'
-layout: 'kontakt'
 ---

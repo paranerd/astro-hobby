@@ -1,6 +1,5 @@
 ---
 title: Datenschutz
-layout: datenschutz
 ---
 
 ## Datenschutzerklärung

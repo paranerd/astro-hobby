@@ -1,4 +1,3 @@
 ---
 title: 'Equipment'
-layout: 'equipment'
 ---
