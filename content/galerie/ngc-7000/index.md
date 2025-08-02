@@ -31,7 +31,7 @@ info:
 ![NGC-7000](header.jpg 'NGC-7000')
 
 Der Nordamerikanebel (NGC 7000) und der Pelikannebel (IC 5070) sind zwei Emissionsnebel im Sternbild Schwan,
-sie liegen eng beieinander und werden durch eine Dunkelwolke getrennt.
+sie liegen eng beieinander und werden durch einen großen Dunkelwolkenkomplex getrennt.
 Beide Nebel sind Teil einer großen Sternentstehungsregion und bieten interessante Beobachtunsobjekte.
 NGC 7000 wurde 1786 von William Herschel entdeckt, IC 5070 von Max Wolf im Jahr 1891 beobachtet.
 Die beiden Nebel sind zwei faszinierende Objekte am Nachthimmel, die durch ihre Formen und ihre Nähe zueinander auffallen. 
