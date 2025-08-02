@@ -15,7 +15,7 @@ info:
   - key: 'Entfernung'
     value: 'zwischen 2000 und 3000 Lichtjahre' 
   - key: 'Helligkeit'
-    value: 'ca. 4 mag'
+    value: 'zwischen 4 und 8 mag'
   - key: 'Belichtung'
     value: '48 x 300s gesamt: 4h'
   - key: 'Kalibrierung'
