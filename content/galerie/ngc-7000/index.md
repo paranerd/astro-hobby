@@ -11,7 +11,7 @@ info:
   - key: 'Objekt'
     value: 'NGC 7000, IC 5070'
   - key: 'Aufnahmedatum'
-    value: '26.bis 29.07.2025'
+    value: '26. bis 29.07.2025'
   - key: 'Entfernung'
     value: 'zwischen 2000 und 3000 Lichtjahre' 
   - key: 'Helligkeit'
