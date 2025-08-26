@@ -1,6 +1,6 @@
 ---
 title: 'B 150'
-title_full: 'Barnard 150 Der Seepferdchennebel'
+title_full: 'Barnard 150  Der Seepferdchennebel'
 date: '2025-08-23'
 author: michael
 categories:
@@ -26,9 +26,6 @@ info:
 
 ![B-150](header.jpg 'B150')
 
-Barnard 150 ist ein Dunkelnebel im Sternbild Kepheus, 1200 Lichtjahre von der Erde entfernt.
-Auf Grund seiner Form ist er auch als Seepferdchennebel oder Dunkler Seepferdchennebel bekannt.
-Der Nebel ist etwa 1° lang und besteht aus drei dichten Gaskernen namens L1082 A, B und C.
-Diese dichten Gaskerne sind Regionen der Sternentstehung. Die interstellare Wolke ist so dicht,
-dass das Licht der dahinter liegenden Sterne und alle anderen Hintergrundemissionen vollständig absorbiert werden.
-Diese Molekülwolke ist Teil unserer Milchstraße
+Barnard 150 ist ein Dunkelnebel im Sternbild Kepheus, 1200 Lichtjahre von der Erde entfernt. Auf Grund seiner Form ist er auch als Seepferdchennebel oder Dunkler Seepferdchennebel bekannt.
+Der Nebel ist etwa 1° lang und besteht aus drei dichten Gaskernen namens L1082 A, B und C. Diese dichten Gaskerne sind Regionen der Sternentstehung. Die interstellare Wolke ist so dicht,
+dass das Licht der dahinter liegenden Sterne und alle anderen Hintergrundemissionen vollständig absorbiert werden. Diese Molekülwolke ist Teil unserer Milchstraße
