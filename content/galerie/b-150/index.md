@@ -14,8 +14,6 @@ info:
     value: '23.08.2025'
   - key: 'Entfernung'
     value: '1200 Lichtjahre' 
-  - key: 'Helligkeit'
-    value: 'zwischen 4 und 8 mag'
   - key: 'Belichtung'
     value: '42 x 300s gesamt: 3,5h'
   - key: 'Kalibrierung'
