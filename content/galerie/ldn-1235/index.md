@@ -30,4 +30,4 @@ Der Dunkelnebel LDN 1235, auch Haifischnebel genannt, liegt im Sternbild Kepheus
 Es handelt sich um eine Molekülwolke in etwa 650 Lichtjahren Entfernung. Sein Alter wird auf 1-5 Millonen Jahre geschätzt.
 Das Sternentstehungsgebiet LDN 1235 ist der dichteste Teil der Molekülwolke und die sehr lichtschwache HII-Region wird als LBN 535 bezeichnet.
 Innerhalb des gesamten Nebelkomplexes befinden sich noch zwei auffällig helle, blaue Reflexionsnebel.
-Der obere heißt vdB 150, der untere vdB 149. Beide werden von Sternen des Spektraltyps B8 beleuchtet.
+Der obere heißt VdB 150, der untere VdB 149. Beide werden von Sternen des Spektraltyps B8 beleuchtet.
