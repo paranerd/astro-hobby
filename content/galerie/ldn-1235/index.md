@@ -9,7 +9,7 @@ info:
   - key: 'Sternbild'
     value: 'Kepheus'
   - key: 'Objekt'
-    value: 'LDN 1235, LBN 535, vdB 150, vdB 149'
+    value: 'LDN 1235, LBN 535, VdB 150, VdB 149'
   - key: 'Aufnahmedatum'
     value: '20./21.08.2025'
   - key: 'Entfernung'
