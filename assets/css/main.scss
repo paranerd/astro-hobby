@@ -158,9 +158,11 @@ main {
 
 #page-bg {
   position: fixed;
+  top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
-  background: url('/img/NGC7000.jpg');
+  background: url('/img/mond.jpg');
   background-size: cover;
   background-attachment: fixed;
   background-position: -223px -67px; /* Keep for moon image */
