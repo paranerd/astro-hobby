@@ -157,7 +157,9 @@ main {
 }
 
 #page-bg {
-  position: center;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   background: url('/img/NGC7000.jpg');
   background-size: cover;
   background-attachment: fixed;
