@@ -25,3 +25,5 @@ info:
 ---
 
 ![NGC6992](header.jpg 'NGC6992')
+
+![NGC6960](NGC6960.jpg 'NGC6960')
