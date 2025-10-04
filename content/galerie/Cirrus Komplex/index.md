@@ -22,6 +22,8 @@ info:
     value: '150/600 Fotonewton f/3,45'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
+  - key: 'Filter'
+    value: 'Optolong 2 Zoll L-Para 10 nm Schmalband Nebelfilter für H-Alpha und O-III'  
 ---
 
 ![NGC6992](header.jpg 'NGC6992')
