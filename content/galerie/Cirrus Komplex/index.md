@@ -15,7 +15,7 @@ info:
   - key: 'Entfernung'
     value: 'etwa 2500 Lichtjahre' 
   - key: 'Belichtung'
-    value: ''
+    value: 'NGC 6992 57 x 300s, NGC 6960 64 x 300s'
   - key: 'Kalibrierung'
     value: 'Dark/Flat/Bias'
   - key: 'Teleskop'
