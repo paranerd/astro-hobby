@@ -28,7 +28,7 @@ info:
     value: 'ZWO ASI071 MC PRO'
   - key: 'Filter'
     value: 'Astronomik L-2 UV-IR Block Filter'
-  ----    
+ ---    
 
 ![M-31](header.jpg 'M-31')
 
