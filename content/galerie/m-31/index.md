@@ -21,9 +21,9 @@ info:
   - key: 'Belichtung'
     value: '75 x 300s gesamt: 6,25h'
   - key: 'Kalibrierung'
-    value: 'Dark/Flat'
+    value: 'Dark/Flat/Bias'
   - key: 'Teleskop'
-    value: 'Esprit ED 80'
+    value: '150/600 Fotonewton f/3,45'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
 ---
