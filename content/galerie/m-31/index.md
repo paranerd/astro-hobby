@@ -30,6 +30,7 @@ info:
 
 ![M-31](header.jpg 'M-31')
 
+---
 title: 'M 31'
 title_full: 'M 31 (Andromeda Galaxie)'
 date: '2025-10-25'
