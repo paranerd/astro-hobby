@@ -26,7 +26,6 @@ info:
     value: '150/600 Fotonewton f/3,45'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
----
 
 ![M-31](header.jpg 'M-31')
 
