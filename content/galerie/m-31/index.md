@@ -30,14 +30,7 @@ info:
 
 ![M-31](header.jpg 'M-31')
 
----
-title: 'M 31'
-title_full: 'M 31 (Andromeda Galaxie)'
-date: '2025-10-25'
-author: michael
-categories:
-  - galaxien
-info:
+Info:
   - key: 'Sternbild'
     value: 'Andromeda'
   - key: 'Objekt'
@@ -58,6 +51,5 @@ info:
     value: 'Esprit ED 80'
   - key: 'Kamera'
     value: 'ZWO ASI071 MC PRO'
----
 
 ![M-31](M31.jpg 'M-31')
