@@ -32,7 +32,7 @@ info:
 
 ![M-31](header.jpg 'M-31')
 
-Info:
+  Info:
 - Sternbild:       Andromeda
 - Objekt:          M31
 - Aufnahmedatum:   06.09.-09.09.2023
