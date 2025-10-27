@@ -41,4 +41,10 @@ info:
 - Teleskop:        Esprit ED 80
 - Kamera:          ZWO ASI071 MC PRO 
 
+| | |
+|----------|-------|
+| Sternbild | Andromeda |
+| Objekt| M 31 |
+{: caption="M31 06.09. - 09.09.2023" }
+
 ![M-31](M31.jpg 'M-31')
