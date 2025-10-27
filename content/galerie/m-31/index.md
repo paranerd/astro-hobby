@@ -45,6 +45,6 @@ info:
 |----------|-------|
 | Sternbild | Andromeda |
 | Objekt| M 31 |
-{: caption="M31 06.09. - 09.09.2023" }
+{caption="M31 06.09. - 09.09.2023"}
 
 ![M-31](M31.jpg 'M-31')
