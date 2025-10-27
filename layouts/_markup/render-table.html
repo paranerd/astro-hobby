@@ -27,7 +27,7 @@
 
 <div class="table-wrapper">
   <table class="{{ $class }}">
-    {{- if $caption }}
+    {{- with $caption }}
       <caption>{{ . | $.Page.RenderString }}</caption>
     {{- end }}
     {{- if $hasHeader -}}
