@@ -5,3 +5,9 @@ permalinks:
   page:
     galerie: /galerie/:year/:month/:day/:slug/
 enableRobotsTXT: true
+markup:
+  goldmark:
+    parser:
+      attribute:
+        block: true
+        title: true
