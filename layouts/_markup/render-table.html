@@ -14,7 +14,7 @@
 {{- /* Check if table headers exist */ -}}
 {{- range $header -}}
   {{- range . -}}
-    {{- if .PlainText -}}
+    {{- if .Text -}}
       {{- $hasHeader = true -}}
     {{- end -}}
   {{- end -}}
