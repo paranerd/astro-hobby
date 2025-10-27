@@ -533,6 +533,34 @@ footer {
   }
 }
 
+.table-wrapper {
+  position: relative;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.5rem 0;
+}
+
+/* Optional: Make scrollbar more subtle */
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+.table-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  pointer-events: none;
+  background: linear-gradient(to left, white, transparent);
+}
+
 .project-info {
   margin: 0;
   width: 100%;
@@ -542,6 +570,15 @@ footer {
 
   @media only screen and (min-width: 992px) {
     width: 80%;
+  }
+
+  caption {
+    caption-side: bottom; /* oder top */
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+    text-align: left;
+    padding-top: 0.5rem;
   }
 
   tr {
