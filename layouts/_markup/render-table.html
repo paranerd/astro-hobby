@@ -7,7 +7,7 @@
    - Optional caption
    ================================================================ */}}
 
-{{- $thead := .Table.Header -}}
+{{- $thead := .Header -}}
 {{- $hasHeader := false -}}
 
 {{- /* Check if table headers exist */ -}}
@@ -31,7 +31,7 @@
     {{- end }}
     {{- if $hasHeader -}}
       <thead>
-        {{- range .Table.Header }}
+        {{- range .Header }}
           <tr>
             {{- range . }}
               <th>{{ .RenderString }}</th>
@@ -41,7 +41,7 @@
       </thead>
     {{- end }}
     <tbody>
-      {{- range .Table.Rows }}
+      {{- range .Rows }}
         <tr>
           {{- range . }}
             <td>{{ .RenderString }}</td>
