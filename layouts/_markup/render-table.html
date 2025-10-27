@@ -1,0 +1,53 @@
+{{/* ================================================================
+   Hugo Render Hook: Markdown Tables
+   Features:
+   - Responsive wrapper
+   - Auto header detection
+   - Custom classes via {: class=classname }
+   - Optional caption
+   ================================================================ */}}
+
+{{- $thead := .Table.Header -}}
+{{- $hasHeader := false -}}
+
+{{- /* Check if table headers exist */ -}}
+{{- range $thead -}}
+  {{- range . -}}
+    {{- if .PlainText -}}
+      {{- $hasHeader = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $class := .Attributes.class | default "project-info" -}}
+
+{{/* Read caption from "caption" atteibute */}}
+{{- $caption := .Attributes.caption -}}
+
+<div class="table-wrapper">
+  <table class="{{ $class }}">
+    {{- if $caption }}
+      <caption>{{ $caption }}</caption>
+    {{- end }}
+    {{- if $hasHeader -}}
+      <thead>
+        {{- range .Table.Header }}
+          <tr>
+            {{- range . }}
+              <th>{{ .RenderString }}</th>
+            {{- end }}
+          </tr>
+        {{- end }}
+      </thead>
+    {{- end }}
+    <tbody>
+      {{- range .Table.Rows }}
+        <tr>
+          {{- range . }}
+            <td>{{ .RenderString }}</td>
+          {{- end }}
+        </tr>
+      {{- end }}
+    </tbody>
+  </table>
+</div>
