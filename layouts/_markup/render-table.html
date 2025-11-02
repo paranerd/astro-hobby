@@ -25,7 +25,7 @@
 {{/* Read caption from "caption" atteibute */}}
 {{- $caption := .Attributes.caption -}}
 
-<div class="table-wrapper">
+<!--<div class="table-wrapper">-->
   <table class="{{ $class }}">
     {{- with $caption }}
       <caption>{{ . | $.Page.RenderString }}</caption>
@@ -51,4 +51,4 @@
       {{- end }}
     </tbody>
   </table>
-</div>
+<!--</div>-->
