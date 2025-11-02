@@ -14,12 +14,22 @@
           >Galerie</a
         >
       </li>
-      <li>
+      <li class="dropdown">
         <a
           class='{{ if hasPrefix .Page.RelPermalink "/equipment" }}active{{ end }}'
           href="/equipment"
           >Equipment</a
         >
+        <div class="dropdown-content">
+          {{ $currentPage := . }}
+          {{ range .Site.Sections }}
+            {{ if eq .Section "equipment" }}
+              {{ range .Pages }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
       </li>
       <li>
         <a
@@ -71,12 +81,22 @@
           >Galerie</a
         >
       </li>
-      <li>
+      <li class="dropdown">
         <a
           class='{{ if hasPrefix .Page.RelPermalink "/equipment" }}active{{ end }}'
           href="/equipment"
           >Equipment</a
         >
+        <div class="dropdown-content">
+          {{ $currentPage := . }}
+          {{ range .Site.Sections }}
+            {{ if eq .Section "equipment" }}
+              {{ range .Pages }}
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        </div>
       </li>
       <li>
         <a
