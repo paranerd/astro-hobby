@@ -36,6 +36,7 @@ info:
 |---|---|
 | Sternbild | Andromeda |
 | Objekt | M 31 |
+| Aufnahmedatum | 06.09. - 09.09.2023 |  
 | Belichtung | 48 x 300s, 12 x 200s, 12 x 100s, 30 x 60s gesamt: 5,5h |
 | Kalibrierung | Dark/Flat |
 | Teleskop | Esprit ED 80 |
