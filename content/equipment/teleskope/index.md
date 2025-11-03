@@ -2,8 +2,6 @@
 title: 'Teleskope'
 ---
 
-  Skywatcher Esprit 80 ED
-
 - Öffnung: 80 mm
 - Brennweite: 400 mm
 - Öffnungsverhältnis: f/5
