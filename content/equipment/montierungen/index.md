@@ -2,4 +2,3 @@
 title: 'Montierungen'
 ---
 
-Montierungen.
