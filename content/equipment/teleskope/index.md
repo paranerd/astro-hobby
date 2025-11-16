@@ -2,7 +2,7 @@
 title: 'Teleskope'
 ---
 
-## <center>Skywatcher Esprit 80ED Super APO Triplet Refraktor</center>
+## Skywatcher Esprit 80ED Super APO Triplet Refraktor
 
 - Öffnung: 80 mm
 - Brennweite: 400 mm
