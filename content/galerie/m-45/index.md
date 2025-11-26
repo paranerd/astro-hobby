@@ -42,13 +42,4 @@ In der griechischen Mythologie sind die Plejaden die sieben Töchter des Titanen
 Die Plejaden sind von einer Reihe von Reflexionsnebeln umgeben, die aus interstellarer Staubmasse bestehen und das Licht der Sterne des Haufens reflektieren. Die bekanntesten sind der Merope-Nebel (NGC 1435) und der Maia-Nebel (NGC 1432).
 
 
-| | |
-|---|---|
-| Sternbild | Stier |
-| Objekt | M 45 |
-| Aufnahmedatum | Dezember 2008 |  
-| Kalibrierung | Dark/Flat |
-| Teleskop | Orion UK Newton 8" / F4.5 |
-| Kamera | Canon EOS 20D |
-
 ![M-45](M45.jpg 'M-45')
