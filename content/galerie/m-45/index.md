@@ -33,6 +33,7 @@ info:
 ![M-45](header.jpg 'M-45')
 
 
+  
 Die Plejaden sind ein offener Sternhaufen im Sternbild Stier, der auch als Siebengestirn oder Sieben Schwestern bekannt ist und mit bloßem Auge sichtbar ist. Sie bestehen aus Hunderten von Sternen, die sich aus einer gemeinsamen Gas- und Staubwolke gebildet haben.
 
 Sie sind mit bloßem Auge gut sichtbar, besonders im Winter am Abendhimmel der Nordhalbkugel. Im Fernrohr zeigen sich die Plejaden als Haufen mit mehreren hundert Sternen. Neuere Forschungen deuten darauf hin, dass der Haufen viel größer ist als bisher angenommen, mit Tausenden von Sternen.
@@ -41,5 +42,6 @@ In der griechischen Mythologie sind die Plejaden die sieben Töchter des Titanen
 
 Die Plejaden sind von einer Reihe von Reflexionsnebeln umgeben, die aus interstellarer Staubmasse bestehen und das Licht der Sterne des Haufens reflektieren. Die bekanntesten sind der Merope-Nebel (NGC 1435) und der Maia-Nebel (NGC 1432).
 
+  
 
 ![M-45](m45_Annotated.jpg 'M-45')
