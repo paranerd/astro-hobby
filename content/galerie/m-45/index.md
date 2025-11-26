@@ -32,7 +32,6 @@ info:
 
 ![M-45](header.jpg 'M-45')
 
-![M-45_Annotated](M45_Annotated.jpg 'M-45_Annotated')
 
 | | |
 |---|---|
